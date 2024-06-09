@@ -1,0 +1,162 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(14, 13, 13);
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: white;
+  text-align: center;
+}
+
+/* NAVBAR SECTION START */
+
+.navbar {
+  background-color: white;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: 0.4s ease;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-heros {
+  color: black;
+  width: 580px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar-heros ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#name-logo {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #2fb297;
+}
+
+.navbar-socials {
+  width: 190px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* NAVBAR SECTION END */
+
+#title1 {
+  font-size: 40px;
+}
+
+#title2 {
+  font-size: 60px;
+}
+
+#menu-page-section {
+  height: calc(100vh - 5rem); /* Subtracting the height of the navbar */
+  margin-top: 5rem; /* Adding top margin equal to the navbar height */
+
+  width: 100vw;
+  display: flex;
+}
+
+.menu-page-left {
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.pinimg.com/564x/05/5e/4e/055e4e82d548029f91d96c30499341fb.jpg");
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 5rem;
+  
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-page-right {
+    height: calc(100vh - 5rem);
+    width: 50%;
+  background-color: rgb(0, 0, 0);
+  margin-left: 50%; /* Offset right side to start after the fixed left side */
+  overflow-y: scroll; /* Make right side scrollable */
+
+}
+p {
+  color: white;
+}
+
+#menu-desc{
+    padding: 50px;
+    font-size: 20px;
+}
+
+#menu-title{
+    color: rgb(219, 160, 51);
+}
+
+.dish-list {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+  }
+  .menu-list-whole{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer{
+    background-color: white;
+    height: 50px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #google{
+    text-decoration: underline;
+    color: #096fd5;
+  }
+
+  

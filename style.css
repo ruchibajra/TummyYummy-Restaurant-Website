@@ -1,0 +1,256 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 18px;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+span{
+  width: 1000px;
+  text-align: center;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* NAVBAR SECTION START */
+.navbar {
+  background-color: white;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: 0.4s ease;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-heros {
+  color: black;
+  width: 580px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar-heros ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#name-logo {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #2fb297;
+}
+
+.navbar-socials {
+  width: 190px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* NAVBAR SECTION END */
+
+/* hero section start */
+
+#hero-section {
+  height: 100vh;
+  width: 100vw;
+  /* width: 100%; */
+  background-image: url(https://img.freepik.com/free-photo/view-food-assortment-with-copy-space_23-2148859557.jpg?t=st=1717913939~exp=1717917539~hmac=5565862732a8ea8d0401748b6538a061a6274f609c0310b090c97afdc831df81&w=1380);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.hero-info {
+  height: 300px;
+  width: 300px;
+  /* background-color: rgb(60, 0, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-left: 42%;
+}
+.hero-heading {
+  margin-top: -50px;
+}
+
+/* special features start */
+#special-feature-section {
+  /* height: 450px; */
+  width: 100vw;
+  /* background-color: #2fb297; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+}
+
+.special-feature-images {
+  height: 200px;
+  width: 60vw;
+  /* background-color: orange; */
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.SF-image {
+  height: 100%;
+  width: 200px;
+}
+
+.SF-image img {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  object-fit: cover;
+}
+
+/* special features end */
+
+/* menu section start */
+#menu-section {
+  height: 100vh; /* Full screen height */
+  width: 100vw; /* Full screen width */
+  background-image: url(https://static.vecteezy.com/system/resources/previews/020/665/646/large_2x/wood-brown-grain-texture-dark-wall-background-top-view-of-wooden-table-with-copy-space-free-photo.jpg) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.menu-title h2{
+  padding-top: 90px;
+  /* background-color: #2fb297; */
+}
+
+
+
+/* PROJECT SECTION START */
+#project {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 90px 0px;
+}
+
+.project-title {
+  width: 800px;
+}
+
+.project-container {
+  height: 500px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.project-box {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-box img {
+  height: 70%;
+  width: 90%;
+  margin-bottom: 5px;
+  background-color: purple;
+  border-radius: 10px;
+  background-size: contain;
+}
+
+.project-desc p {
+  padding: 5px 5px 0px 5px;
+  font-size: 13px;
+  color: black;
+
+}
+
+h3{
+  color: black;
+
+}
+
+button{
+  height: 35px;
+  width: 200px;
+  border-radius: 10px;
+  background-color:white;
+  color:  rgb(204, 140, 20);
+  font-weight: bold;
+  border: none;
+  margin-top: 30px;}
+/* PROJECT SECTION END */
+
+/* contact us section */
+#contact-us-section{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btn-contact{
+  background-color: rgb(204, 140, 20);
+  color: white;
+  width: 100px;
+}
+
+/* contact us section */
+
+/* FOOTER SECTION START */
+.footer-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #35404e;
+  color: #ffffff;
+  height: 100px;
+}
+/* FOOTER SECTION END */
