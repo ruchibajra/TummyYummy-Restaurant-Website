@@ -114,7 +114,6 @@ a {
 
 /* special features start */
 #special-feature-section {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,23 +121,29 @@ a {
 }
 
 .special-feature-images {
-  height: 200px;
-  width: 60vw;
-  /* background-color: orange; */
+  width: 1500px;
+  background-color: orange;
   margin-top: 40px;
+  padding: 10px;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .SF-image {
-  height: 100%;
+  /* flex: 3 2 100px;  
+   Flex-grow: 1, Flex-shrink: 1, Flex-basis: 200px */
+  height: 200px;
   width: 200px;
+  margin: 10px;
+  background-color: black;
+  
 }
 
 .SF-image img {
-  height: 100%;
   width: 100%;
-  background-color: red;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -305,6 +310,7 @@ button {
     align-self: center;
     /* font-size: 1rem; */
   }
+  
   /* .hero-info h1 {
     padding-top: 30px;
     
