@@ -3,14 +3,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
-h1{
+h1 {
   font-size: 18px;
 }
 h2 {
   text-align: center;
   padding-bottom: 10px;
 }
-span{
+span {
   font-size: 1.2rem;
   /* background-color: red; */
   width: 80vw;
@@ -90,9 +90,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
 
 .hero-info {
@@ -105,6 +102,12 @@ a {
   text-align: center;
   margin-left: 42%;
 }
+
+.hero-info img {
+  /* filter: brightness(100%) ;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/4d8eab19056497.562d514b94a2f.png); */
+}
+
 .hero-heading {
   margin-top: -50px;
 }
@@ -145,23 +148,21 @@ a {
 #menu-section {
   /* height: 100vh; Full screen height */
   width: 100vw; /* Full screen width */
-  background-image: url(https://static.vecteezy.com/system/resources/previews/020/665/646/large_2x/wood-brown-grain-texture-dark-wall-background-top-view-of-wooden-table-with-copy-space-free-photo.jpg) ;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/020/665/646/large_2x/wood-brown-grain-texture-dark-wall-background-top-view-of-wooden-table-with-copy-space-free-photo.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
 
-.menu-title h2{
+.menu-title h2 {
   padding-top: 40px;
   /* background-color: #2fb297; */
 }
 
-.project-desc img{
+.project-desc img {
   background-size: contain;
 }
-
-
 
 /* PROJECT SECTION START */
 #project {
@@ -197,11 +198,10 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .project-box img {
-  height:70%;
+  height: 70%;
   width: 80%;
   margin-bottom: 5px;
   background-color: purple;
@@ -213,20 +213,18 @@ a {
   padding: 5px 5px 0px 5px;
   font-size: 13px;
   color: black;
-
 }
 
-h3{
+h3 {
   color: black;
-
 }
 
-button{
+button {
   height: 35px;
   width: 200px;
   border-radius: 10px;
-  background-color:white;
-  color:  rgb(204, 140, 20);
+  background-color: white;
+  color: rgb(204, 140, 20);
   font-weight: bold;
   border: none;
   margin-bottom: 20%;
@@ -234,7 +232,7 @@ button{
 /* PROJECT SECTION END */
 
 /* contact us section */
-#contact-us-section{
+#contact-us-section {
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -242,7 +240,7 @@ button{
   align-items: center;
 }
 
-#btn-contact{
+#btn-contact {
   background-color: rgb(204, 140, 20);
   color: white;
   width: 100px;
@@ -262,4 +260,56 @@ button{
 }
 /* FOOTER SECTION END */
 
+/* media query start */
+@media screen and (max-width: 830px) {
+  span {
+    background-color: #2fb297;
+  }
 
+  #hero-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://img.freepik.com/free-photo/view-food-assortment-with-copy-space_23-2148859557.jpg?t=st=1717913939~exp=1717917539~hmac=5565862732a8ea8d0401748b6538a061a6274f609c0310b090c97afdc831df81&w=1380");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-info {
+    background-color: #ffffff;
+    min-height: 50%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+  }
+
+  .hero-info p {
+    padding: 10px;
+    height: 60%;
+    align-self: center;
+    font-size: 1rem;
+  }
+  .hero-info img {
+    padding: 10px;
+    height: 60%;
+    align-self: center;
+    /* font-size: 1rem; */
+  }
+  /* .hero-info h1 {
+    padding-top: 30px;
+    
+  } */
+
+
+}
+/* media query end */
